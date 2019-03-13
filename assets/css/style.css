@@ -1,0 +1,464 @@
+/*----------------------------------------
+Date Created: 14/01/2019
+Version: 1.0
+Author: Albano [help from Craig & Steve]
+Copyright: Albano Correia [Learn the Web]
+------------------------------------------*/
+
+/*----------------------------------------
+Colour Palette
+Clear gry - #e5e5e5
+Red Cricket - #8c182c
+
+------------------------------------------*/
+
+/*-----------------------------------------
+Table of Contents
+1. Reset
+2. Nav-bar
+3. Hero
+4. Content
+5. Pictures
+6. Clubs
+7. Site-Logo
+8. Copyright
+9. Sep
+10. Contact Form
+11. content mobile size 375px
+12. Content tablet size 650px
+13. Content tablet size 768px
+14. Break point 900px
+15. Content Desktop Size 1200px
+
+-------------------------------------------*/
+
+/*------------------------------------------
+[$Reset]
+-------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3,h4,h5,h6 {
+        margin-bottom: .75em;
+}
+
+ul {
+    margin-left: 0;
+}
+
+li {
+    margin-bottom: .3em;
+}
+
+p {
+    margin-bottom: .75em;
+    line-height: 150%;
+}
+
+body {
+    font-family: open-sans, arial, sans-serif;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row; /* Left to Right */
+    flex-wrap: wrap; /* Elements will drop underneath */
+    justify-content: space-between; /* centeres the elements  */
+}
+
+.items-center {
+        align-items: center;
+}
+
+.container {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 1200px;
+}
+
+/*----------------------------------------
+[$End Reset]
+----------------------------------------*/
+
+/*----------------------------------------
+[$nav-bar]
+----------------------------------------*/
+
+.nav-bar {
+        /* Changes the background color of the nav-bar */
+        background-color: #000;
+}
+
+.nav-bar ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+}
+.nav-bar li {
+            list-style: none; /* removes the Bullets */
+            margin-bottom: 0;
+}
+
+.nav-bar a {
+            color: #fff;
+            text-decoration: none; /* removes underline */
+            padding: 15px; /*added space */
+            display: block; /* this makes te padding above work properly */
+}
+    /* changes the aspect of the object when the mouse passes over it */
+.nav-bar a:hover {
+                background-color: #333;
+
+}
+.social-nav a {
+                padding: 10px;
+}
+
+/*-----------------------------------------
+///ENDS [nav-bar]
+*-----------------------------------------*/
+
+/*-----------------------------------------
+[$hero]
+------------------------------------------*/
+
+.hero {
+        background-color: #eee;
+        background-image: url(../img/dickie-bird-hero.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 500px;
+        max-width: 1200px;
+        position: relative;
+}
+
+.hero h1 span {
+                display: block;
+                font-size: 2em;
+}
+
+.hero-text {
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 20px;
+            right: 0;
+            bottom: 0;
+            position: absolute;
+            left: 0px;
+}
+
+.hero-logo {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+}
+
+/*------------------------------------------
+// ENDS [hero]
+-------------------------------------------*/
+
+/*------------------------------------------
+[$Content]
+-------------------------------------------*/
+
+.content {
+        margin: 2%;
+        max-width: 1300px;
+}
+
+/* styles the first element in the p to bold */
+.main-content p:first-of-type {
+                        font-weight: bold;
+}
+
+.sidebar {
+            background: #e5e5e5;
+            padding: 2%;
+}
+
+.sidebar ul {
+            margin-bottom: 20px;
+}
+
+.sidebar li {
+            list-style: none;
+}
+
+/*----------------------------------------------
+// ENDS [content]
+-----------------------------------------------*/
+
+/*-----------------------------------------------
+[pictures]
+----------------------------------------------*/
+
+.pictures {
+            background: #e5e5e5;
+            padding: 20px;
+            max-width: 1300px;
+}
+
+.pictures ul {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+}
+
+.pictures li {
+                padding: 15px;
+                list-style: none;
+                width: 38%;
+}
+
+.pictures img {
+                width: 100%;
+}
+
+/*----------------------------------------------
+// ENDS [pictures]
+-----------------------------------------------*/
+
+/*----------------------------------------------
+[clubs]
+-----------------------------------------------*/
+
+.clubs {
+        justify-content: center;
+        margin: 2%;
+        width: 100%;
+}
+.clubs img {
+            width: auto;
+            height: 50px;
+}
+
+.clubs li {
+            padding: 15px;
+            list-style: none;
+}
+
+/*---------------------------------------------
+End [clubs]
+----------------------------------------------*/
+
+/*---------------------------------------------
+[$site-logo]
+----------------------------------------------*/
+
+.site-logo {
+    margin: 2%;
+    width: 100%;
+    text-align: center;
+}
+.site-logo img {
+                width: 100px;
+                height: auto;
+}
+
+/*---------------------------------------------
+// ENDS [site-logo]
+----------------------------------------------*/
+
+/*---------------------------------------------
+[$copyright]
+----------------------------------------------*/
+
+.copyright {
+            background-color: #000; /* background color of the copyright line Black */
+            justify-content: flex-start; /* aling from left to right */
+}
+
+.copyright p {
+            color: #fff;
+            padding: 5px;
+            margin-bottom: 0;
+}
+
+.copyright a {
+            color: #fff;
+            text-decoration: none; /* Removes the underline of the link */
+}
+
+/*---------------------------------------------
+// ENDS [copyright]
+----------------------------------------------*/
+
+/*---------------------------------------------
+[$sep]
+----------------------------------------------*/
+
+.sep::after {
+            content: "~";
+            display: block;
+            text-align: center;
+
+}
+
+/*---------------------------------------------
+// ENDS [sep]
+----------------------------------------------*/
+
+/*---------------------------------------------
+[$contact-form]
+----------------------------------------------*/
+
+.contact-form {
+            background-color: #eee;
+            background-image: url(../img/map.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 500px;
+            margin-top: 20px;
+            padding: 20px;
+}
+
+
+
+input[type=text] {
+                padding: 10px 20px;
+                margin: 8px 0;
+                font-size: 16px;
+                border-radius: 4px;
+                border: 2px solid #ccc;
+}
+
+input[type=email] {
+                padding: 10px 20px;
+                margin: 8px 0;
+                font-size: 16px;
+                border-radius: 4px;
+                border: 2px solid #ccc;
+}
+
+textarea {
+        height: 150px;
+        padding: 10px 20px;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        resize: none; /*blocks the possibility of resizing the text box */
+}
+
+input[type=submit] {
+                width: 120px;
+                height: 50px;
+                padding: 10px 20px;
+                margin: 8px 0;
+                font-size: 16px;
+                border: 2px solid #ccc;
+                border-radius: 4px;
+
+}
+
+input[type=submit]:hover {
+                        background: rgba(204, 204, 204, 0.1);
+}
+
+/*---------------------------------------------
+// ENDS [contact-form]
+----------------------------------------------*/
+
+/*----------------------------------------------
+[$375px] Content Mobile size
+----------------------------------------------*/
+
+@media (min-width: 375px) {
+                    .main-content, .sidebar {
+                    width: 99%;
+}
+
+input[type=text], input[type=email], textarea {
+                                            width: 300px;
+}
+
+}
+
+/*-----------------------------------------
+Ends [375px] Content mobile size
+------------------------------------------*/
+
+/*-----------------------------------------
+[$650px] Content tablet size
+------------------------------------------*/
+
+@media (min-width: 650px) {
+    .nav-bar ul {
+        width: auto;
+    }
+    .site-logo, .clubs {
+        width: auto;
+    }
+
+
+    .hero-text {
+        width: 190px;
+        top: 180px;
+        bottom: auto;
+    }
+}
+/*------------------------------------------
+// ENDS [650px] Content tablet size
+-------------------------------------------*/
+
+/*------------------------------------------
+[$768px] Content tablet Size
+-------------------------------------------*/
+
+@media (min-width: 768px) {
+    .main-content {
+        width: 70%;
+    }
+
+    .sidebar {
+        width: 20%;
+    }
+
+}
+
+/*------------------------------------------
+Ends [768px] Content Tablet size
+------------------------------------------*/
+
+/*-----------------------------------------
+[$900px] Break point
+-----------------------------------------*/
+
+ @media (min-width: 900px) {
+
+     .pictures ul {
+                 display: flex;
+                 flex-direction: row;
+                 flex-wrap: wrap;
+                 justify-content: space-between;
+                 width: 100%;
+     }
+
+     .pictures li {
+                 width: 22%;
+                 padding: 0;
+                 list-style: none;
+
+     }
+
+ }
+
+/*----------------------------------------
+// ENDS [900px] Break point
+-----------------------------------------*/
+
+/*----------------------------------------
+[$1200px] Content Desktop Size
+-----------------------------------------*/
+
+@media (min-width: 1200px) {
+    .content {
+        margin: 2% auto;
+    }
+}
+
+/*----------------------------------------
+End [1200px] Content Desketop Size
+----------------------------------------*/
